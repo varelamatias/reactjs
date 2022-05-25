@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "./imports/variables";
+
+/* MENU */
+
+
+.navbar-nav li{
+    
+    // margin-top: -25pt;
+    // padding: 25pt;
+    // margin-bottom: -25pt;
+    a{
+        font-family: $fuenteSecundaria; 
+        text-transform: uppercase;
+    }
+}
+
+.img-fluid{
+    width: 30px;
+    height: 30px;
+}
+
+/* SECCIONES */
+
+.parteDelHome{
+    display: grid;
+    grid-template-areas: 
+    'secA0'
+    'secA'
+    'secA1'
+    'secA2'
+    'secA3';
+    grid-template-columns: 2fr;
+    grid-template-rows: 500px 450px 400px 600px ;
+}
+
+.carousel{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.secA{
+    padding-top: 50px;
+
+    h2{
+        font-size: $tamanioPrincipal;
+        text-align: left;
+        text-transform: capitalize ;
+        color: $colorPrincipal;
+        font-family: $fuentePrimaria;
+    }
+    p{
+        color: $colorSecundario;
+        font-family: $fuentePrimaria;
+        padding-left: 20pt;
+        font-size: 19px;
+    }
+}
+
+.secA1{
+    background-color: $backgroundPrimario;
+    padding-left: 10pt;
+    padding-top: 50px;
+
+    h2{
+        font-size: $tamanioPrincipal;
+        text-align: left;
+        text-transform: capitalize ;
+        color: $colorPrincipal;
+        font-family: $fuentePrimaria;
+    }
+    h3{
+        text-align: center;
+        color: $colorPrincipal;
+        text-transform: capitalize;
+        font-family: $fuentePrimaria;
+    }
+    h4{
+        text-align: center;
+        color: $colorSecundario;
+        font-family: $fuentePrimaria;
+    }
+}
+
+.secA2{
+    background-color: $backgroundSecundario;
+    padding-bottom: 200px;
+    padding-top: 50px;
+    h2{
+        font-size: $tamanioPrincipal;
+        text-align: left;
+        text-transform: capitalize ;
+        color: $colorPrincipal;
+        font-family: $fuentePrimaria;
+        padding-left: 10pt;
+    }
+    p{
+        color: $colorSecundario;
+        font-family: $fuentePrimaria;
+        padding-left: 30pt;
+    }
+    ul li{
+        padding-bottom: 100px;
+        padding-top: 50px;
+        font-family: $fuentePrimaria;
+        text-transform: uppercase;
+    }
+    
+}
+
+.secA3{
+    display: grid;
+    background-color: $backgroundPrimario;
+    padding-left: 10pt;
+    padding-top: 50px;
+
+    h2{
+        font-size: $tamanioPrincipal;
+        text-align: left;
+        text-transform: capitalize ;
+        color: $colorPrincipal;
+        font-family: $fuentePrimaria;
+    }
+}
+
+.imagenCont{
+    width: 100%;
+}
+
+/* FOOTER */
+
+.estiloFooter{
+    display: flex;
+    justify-content: space-between;
+    background-color: $backgroundSecundario;
+    color: $colorPrincipal;
+    font-weight: bold;
+    p{
+        margin-bottom: 0;
+    }
+}
+
+/* FORMULARIO CONTACTO */
+
+// .containerFt{
+//     display: flex;
+//     text-align: center;
+//     justify-content: center;
+//     padding-top: 56px;
+//     padding-right: 20px;
+//     background-color: $backgroundPrimario;
+//     .row{
+//         display: block;
+        
+//     }
+// }
+// .colP{
+    
+//     padding-left: 34%;
+// }
+
+// .anchoTotal{
+//     width: 70%;
+//     height: 300%;
+// }
+
+// .test1{
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .mb-3{
+//    padding-right: 50%;
+// }
+
+.formularioContacto{
+    display: grid;
+    grid-template-areas: 
+    'f1'
+    'f2';
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 200px 100px;
+}
+
+.f1{
+    width: 50%;
+    height: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 404 */
+
+.imagen404{
+    height: 100%;
+    width: 100%; 
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width:768px){
+     
+}
+
+@media only screen and (max-width: 767px) and (min-width: 321px) {
+    
+    .containerFt{
+        padding-left: 20px;
+        .row{
+            display: block;
+        }
+    }
+    .parteDelHome{ 
+        grid-template-rows: 400px 300px 500px;     
+    }
+   
+}
+
+/* mobile */
+@media only screen and (max-width: 320px){
+   
+    .containerFt{
+        padding-left: 20px;
+        .row{
+            display: block;
+        }
+    }
+    .estiloFooter{
+        font-size: 80%;
+    }
+    .parteDelHome{ 
+        grid-template-rows: 200px 300px 900px;     
+    }
+    .secA2{
+        ul{
+            li{
+                padding-right: 10%;
+                padding-left: 10%;
+            }
+        }
+    }
+}
+    
+
+@media only screen and (max-width: 375px){
+   
+    .containerFt{
+        padding-left: 20px;
+        .row{
+            display: block;
+        }
+    }
+    .estiloFooter{
+        font-size: 80%;
+    }
+    .parteDelHome{ 
+        grid-template-rows: 200px 300px 900px;     
+    }
+    .secA2{
+        ul{
+            li{
+                padding-right: 25%;
+                padding-left: 25%;
+            }
+        }
+    }
+}
+
