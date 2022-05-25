@@ -1,0 +1,9 @@
+let inventarioAcciones = [
+    {id: 1, nombre: "Acciones GGL", precio: 8000, img:"./media/imagenes/2.jpg"},
+    {id: 2, nombre: "Acciones APPL", precio: 4000, img:"./media/imagenes/12.jpg"},
+    {id: 3, nombre: "Acciones FNTECH", precio: 1500, img:"./media/imagenes/13.jpg"},
+    {id: 4, nombre: "Acciones TYINC", precio: 600, img:"./media/imagenes/17.jpg"},
+    {id: 5, nombre: "Acciones BTCS", precio: 2000, img:"./media/imagenes/18.jpg"},
+    {id: 6, nombre: "Acciones SBUX", precio: 1000, img:"./media/imagenes/16.jpg"},
+
+]
