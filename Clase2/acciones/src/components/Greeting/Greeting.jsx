@@ -2,7 +2,11 @@
 const Greeting = ({hola}) =>{
     return(
         <>
-            <h1>{hola}</h1>
+            <main className="parteDelHome">
+                <div className="secA">
+                    <h1>{hola}</h1>
+                </div>
+            </main>
         </>
     )
 }
